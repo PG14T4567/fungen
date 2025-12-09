@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FunGen — Viral Fun Generators</title>
+  <meta name="description" content="FunGen — random nicknames, roasts, pickup lines, usernames, fake messages, age calculator & more. Share the fun!" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top">
+      <h1 class="logo bounce">FunGen 🎉</h1>
+      <div class="header-actions">
+        <button id="shareBtn" class="btn small">Share</button>
+        <button id="darkToggle" class="btn small">Dark</button>
+      </div>
+    </div>
+    <p class="tagline">Viral generators — nicknames, roasts, pickup lines, memes & more. Tap anything to start!</p>
+  </header>
+
+  <!-- TOP AD PLACEHOLDER (paste AdSense code here when ready) -->
+  <div class="ad-placeholder" id="ad-top">Ad Placeholder — paste AdSense code here</div>
+
+  <main class="main">
+    <section class="cards-grid" aria-label="generators">
+      <!-- Each card launches a generator in the panel -->
+      <button class="card" data-gen="nickname">Nickname Generator</button>
+      <button class="card" data-gen="roast">Roast Generator</button>
+      <button class="card" data-gen="pickup">Pickup Line</button>
+      <button class="card" data-gen="username">Username Generator</button>
+      <button class="card" data-gen="fake">Fake Message</button>
+      <button class="card" data-gen="age">Age Calculator</button>
+      <button class="card" data-gen="meme">Meme Caption</button>
+      <button class="card" data-gen="excuse">Funny Excuse</button>
+      <button class="card" data-gen="compliment">Compliment Generator</button>
+    </section>
+
+    <section id="panel" class="panel hidden" aria-live="polite">
+      <div class="panel-head">
+        <h2 id="panelTitle">Generator</h2>
+        <div class="panel-controls">
+          <button id="copyBtn" class="btn">Copy</button>
+          <button id="againBtn" class="btn">Generate Again</button>
+        </div>
+      </div>
+
+      <div id="panelBody" class="panel-body">
+        <!-- Dynamic input area (JS will insert inputs here) -->
+      </div>
+
+      <div id="resultWrap" class="result-wrap">
+        <p id="resultText" class="result-text">Your result appears here</p>
+      </div>
+    </section>
+
+    <!-- BOTTOM AD PLACEHOLDER (paste AdSense code here when ready) -->
+    <div class="ad-placeholder" id="ad-bottom">Ad Placeholder — paste AdSense code here</div>
+  </main>
+
+  <footer class="site-footer">
+    <small>FunGen © 2025 • Built for fun • No data stored</small>
+  </footer>
+
+  <!-- fireworks canvas (pointer-events none so clicks pass through) -->
+  <canvas id="fxCanvas" class="fireworks-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
